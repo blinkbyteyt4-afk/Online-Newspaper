@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,15 +9,17 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-wrap">
-        <a href="./index.html" class="logo">Newspaper</a>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link">Головна сторінка</a>
+      <div class="header__container container">
+        <a href="./index.html" class="header__logo logo">Newspaper</a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="./index.html" class="header__nav-link"
+                >Головна сторінка</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="./contacts.html" class="nav-link">Контакти</a>
+            <li class="header__nav-item">
+              <a href="./contacts.html" class="header__nav-link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -25,48 +27,105 @@
     </header>
 
     <main class="main">
-      <div class="container contacts-container">
-        <div class="contacts-wrap">
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <p class="contact-text">
-                Ви можете зателефонувати нам за номером:
-              </p>
-              <a href="tel:+380730000000" class="contact-link">+380730000000</a>
-            </li>
-            <li class="contact-item">
-              <p class="contact-text">Якщо у вас є цікаві новини:</p>
-              <a href="mailto:newspaper@gmail.com" class="contact-link"
-                >newspaper@gmail.com</a
+      <section class="contacts-section" style="padding: 40px 0">
+        <div
+          class="container"
+          style="
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+          "
+        >
+          <h1 style="text-align: center; margin-bottom: 30px">Наші контакти</h1>
+
+          <div class="contacts-wrap">
+            <ul
+              class="contacts-list"
+              style="list-style: none; padding: 0; margin-bottom: 30px"
+            >
+              <li
+                class="contact-item"
+                style="margin-bottom: 20px; text-align: center"
               >
-            </li>
-          </ul>
-          <div class="contact-address">
-            <p class="contact-text">
-              Завітайте до нас в офіс за адресою м.Київ, вул. Хрещатик
-            </p>
-            <img src="./img/map.png" alt="address" class="contact-img" />
+                <p
+                  class="contact-text"
+                  style="font-weight: bold; margin-bottom: 5px"
+                >
+                  Ви можете зателефонувати нам за номером:
+                </p>
+                <a
+                  href="tel:+380730000000"
+                  class="contact-link"
+                  style="
+                    color: #007bff;
+                    text-decoration: none;
+                    font-size: 1.1em;
+                  "
+                  >+380730000000</a
+                >
+              </li>
+              <li
+                class="contact-item"
+                style="margin-bottom: 20px; text-align: center"
+              >
+                <p
+                  class="contact-text"
+                  style="font-weight: bold; margin-bottom: 5px"
+                >
+                  Якщо у вас є цікаві новини:
+                </p>
+                <a
+                  href="mailto:newspaper@gmail.com"
+                  class="contact-link"
+                  style="
+                    color: #007bff;
+                    text-decoration: none;
+                    font-size: 1.1em;
+                  "
+                  >newspaper@gmail.com</a
+                >
+              </li>
+            </ul>
+
+            <div
+              class="contact-address"
+              style="text-align: center; margin-top: 30px"
+            >
+              <p
+                class="contact-text"
+                style="font-weight: bold; margin-bottom: 15px"
+              >
+                Завітайте до нас в офіс за адресою м. Київ, вул. Хрещатик
+              </p>
+              <img
+                src="./img/map.png"
+                alt="address"
+                class="contact-img"
+                style="
+                  width: 100%;
+                  max-width: 600px;
+                  display: block;
+                  margin: 0 auto;
+                  border-radius: 6px;
+                "
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="container footer-wrap">
-        <a href="./index.html" class="logo">Newspaper</a>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <a href="tel:+380730000000" class="footer-link tel"
-              >+380730000000</a
-            >
-          </li>
-          <li class="footer-item">
-            <a href="mailto:newspaper@gmail.com" class="footer-link"
-              >newspaper@gmail.com</a
-            >
-          </li>
-        </ul>
+      <div class="footer__container container">
+        <a href="./index.html" class="footer__logo logo">Newspaper</a>
+        <div class="footer__contacts">
+          <p>+380730000000</p>
+          <p>newspaper@gmail.com</p>
+        </div>
       </div>
     </footer>
   </body>
 </html>
+
